@@ -2,7 +2,7 @@
 Feature: EditProduct
 
   @Edit1
-  Scenario: Title of your scenario outline
+  Scenario: User want to edit product detail
     Given User is on SecondHand App
     When User Click "Masuk" Button
     Then User input "erlangga@mailinator.com" into "Email" field
