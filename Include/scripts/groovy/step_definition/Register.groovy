@@ -46,20 +46,20 @@ import cucumber.api.java.en.When
 
 class Register {
 
-	
+
 	@Given("User is on the SecondHand App")
 	def user_is_on_the_secondhand_app() {
-		Mobile.verifyElementVisible(findTestObject('Home_Page/button_beranda'), 3, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User click AKUN icon")
 	def user_click_akun_icon() {
-		Mobile.tap(findTestObject('Home_Page/button_akun'), 3)
+		Mobile.tap(findTestObject('Page_Home/button_akun'), 3)
 	}
 
 	@And("User click MASUK button")
 	def user_click_masuk_button() {
-		Mobile.tap(findTestObject('Home_Page/button_AkunMasuk'), 2)
+		Mobile.tap(findTestObject('Page_Home/button_AkunMasuk'), 2)
 	}
 
 	@And("User click DAFTAR link")
@@ -76,32 +76,32 @@ class Register {
 	def user_input_nama_into_nama_field(String nama) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Nama'), nama, 2)
 	}
-	
+
 	@And("User input {string} into EMAIL field")
 	def user_input_email_into_email_field(String email) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Email'), email, 2)
 	}
-	
+
 	@And("User input {string} into PASSWORD field")
 	def user_input_password_into_password_field(String password) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Password'), password, 2)
 	}
-	
+
 	@And("User input {string} into NOMOR HP field")
 	def user_input_nomorhp_into_nomorhp_field(String nomorhp) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_NomorHP'), nomorhp, 2)
 	}
-	
+
 	@And("User input {string} into KOTA field")
 	def user_input_kota_into_kota_field(String kota) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Kota'), kota, 2)
 	}
-	
+
 	@And("User input {string} into ALAMAT field")
 	def user_input_alamat_into_alamat_field(String alamat) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Alamat'), alamat, 2)
 	}
-	
+
 	@Then ("User click DAFTAR button")
 	def user_click_daftar_button() {
 		def device_Height = Mobile.getDeviceHeight()
@@ -110,10 +110,9 @@ class Register {
 		Mobile.swipe(0, endY, 0, startY)
 		Mobile.tap(findTestObject('Page_Register/button_Daftar'), 2)
 	}
-	
+
 	@And("User is on profile page")
 	def user_is_on_profile_page() {
-		Mobile.verifyElementVisible(findTestObject('Home_Page/button_beranda'), 3)
+		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3)
 	}
-
 }

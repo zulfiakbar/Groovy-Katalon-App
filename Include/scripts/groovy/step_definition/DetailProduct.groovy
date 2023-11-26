@@ -17,8 +17,10 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import org.openqa.selenium.Keys as Keys
 import internal.GlobalVariable
+import io.appium.java_client.android.nativekey.AndroidKey
+import io.appium.java_client.android.nativekey.KeyEvent
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -44,31 +46,33 @@ import cucumber.api.java.en.When
 
 
 
-class Edit_Product {
-
-
-
-	@Then("User click product card that want to edit")
-	public void user_click_product_card_that_want_to_edit() {
+class DetailProduct {
+	@Given("User is on SecondHand App")
+	public void user_is_on_SecondHand_App() {
+		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
 	}
 
-	@Then("User fill text field at {string}")
-	public void user_fill_text_field_at(String string) {
+	@When("User click one of product card")
+	public void user_click_one_of_product_card() {
+
+		Mobile.tap(findTestObject('Page_Home/div_Product1'), 3)
 	}
 
-	@Then("User choose category at KATEGORI")
-	public void user_choose_category_at_KATEGORI() {
+	@Then("User can see product detail")
+	public void user_can_see_product_detail() {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
 	}
 
-	@Then("upload photos at FOTO PRODUK")
-	public void upload_photos_at_FOTO_PRODUK() {
+	@When("User click one of product item from {string} result list")
+	public void user_click_one_of_product_item_from_result_list(String string) {
+		Mobile.tap(findTestObject('Page_Home/inputfield_search'), 2)
+		Mobile.setText(findTestObject('Page_Home/inputfield_search'), 'kucing', 1)
+		Mobile.sendKeys(findTestObject('Page_Home/inputfield_search'), Keys.chord(Keys.RETURN))
+	
 	}
 
-	@Then("User click PERBARUI PRODUK button")
-	public void user_click_PERBARUI_PRODUK_button() {
-	}
-
-	@Then("User successfully edit product detail")
-	public void user_successfully_edit_product_detail() {
+	@Then("User can see product detail from product list that appeared on search result")
+	public void user_can_see_product_detail_from_product_list_that_appeared_on_search_result() {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/img_kucing'), 2)
 	}
 }
