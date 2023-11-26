@@ -55,23 +55,24 @@ class DetailProduct {
 	@When("User click one of product card")
 	public void user_click_one_of_product_card() {
 
-		Mobile.tap(findTestObject('Home_Page/div_Product1'), 3)
+		Mobile.tap(findTestObject('Page_Home/div_Product1'), 3)
 	}
 
 	@Then("User can see product detail")
 	public void user_can_see_product_detail() {
-		Mobile.verifyElementVisible(findTestObject('DetailProduct_Page/txt_NamaProduk'), 2)
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
 	}
 
 	@When("User click one of product item from {string} result list")
 	public void user_click_one_of_product_item_from_result_list(String string) {
-		Mobile.tap(findTestObject('Home_Page/inputfield_search'), 2)
-		Mobile.setText(findTestObject('Home_Page/inputfield_search'), 'kucing', 1)
-		Mobile.sendKeys(findTestObject('Home_Page/inputfield_search'), Keys.chord(Keys.RETURN))
+		Mobile.tap(findTestObject('Page_Home/inputfield_search'), 2)
+		Mobile.setText(findTestObject('Page_Home/inputfield_search'), 'kucing', 1)
+		Mobile.sendKeys(findTestObject('Page_Home/inputfield_search'), Keys.chord(Keys.RETURN))
+	
 	}
 
 	@Then("User can see product detail from product list that appeared on search result")
 	public void user_can_see_product_detail_from_product_list_that_appeared_on_search_result() {
-		Mobile.verifyElementVisible(findTestObject('DetailProduct_Page/txt_NamaProduk'), 2)
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/img_kucing'), 2)
 	}
 }
