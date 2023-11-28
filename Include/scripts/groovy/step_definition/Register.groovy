@@ -116,7 +116,7 @@ class Register {
 	def user_is_on_profile_page() {
 		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3)
 	}
-	
+
 	@And("User get name error message")
 	def user_get_name_error_message() {
 		def device_Height = Mobile.getDeviceHeight()
@@ -125,7 +125,7 @@ class Register {
 		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Page_Register/errMsg_Nama'), 3)
 	}
-	
+
 	@And("User get email error message")
 	def user_get_email_error_message() {
 		def device_Height = Mobile.getDeviceHeight()
@@ -134,7 +134,7 @@ class Register {
 		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Page_Register/errMsg_Email'), 3)
 	}
-	
+
 	@And("User get password error message")
 	def user_get_password_error_message() {
 		def device_Height = Mobile.getDeviceHeight()
@@ -143,7 +143,7 @@ class Register {
 		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Page_Register/errMsg_Password'), 3)
 	}
-	
+
 	@And("User get nomor hp error message")
 	def user_get_nomor_hp_error_message() {
 		def device_Height = Mobile.getDeviceHeight()
@@ -152,17 +152,17 @@ class Register {
 		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Page_Register/errMsg_NomorHP'), 3)
 	}
-	
+
 	@And("User get kota error message")
 	def user_get_kota_error_message() {
 		Mobile.verifyElementVisible(findTestObject('Page_Register/errMsg_Kota'), 3)
 	}
-	
+
 	@And("User get alamat error message")
 	def user_get_alamat_error_message() {
 		Mobile.verifyElementVisible(findTestObject('Page_Register/errMsg_Alamat'), 3)
 	}
-	
+
 	@And("User is still on register page")
 	def user_is_still_on_register_page() {
 		def device_Height = Mobile.getDeviceHeight()

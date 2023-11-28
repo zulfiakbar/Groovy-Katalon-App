@@ -68,7 +68,6 @@ class DetailProduct {
 		Mobile.tap(findTestObject('Page_Home/inputfield_search'), 2)
 		Mobile.setText(findTestObject('Page_Home/inputfield_search'), 'kucing', 1)
 		Mobile.sendKeys(findTestObject('Page_Home/inputfield_search'), Keys.chord(Keys.RETURN))
-	
 	}
 
 	@Then("User can see product detail from product list that appeared on search result")
