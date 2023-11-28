@@ -11,25 +11,25 @@ Feature: Login
    
 	@login2
 		Scenario: Using want to login using unregistered email
-		Given User in on SecondHand App
+		Given User is on SecondHand App
 		When User Click Masuk Button 
-		Then User input "erlangga2@mailinator.com" into email filed
+		Then User input "erlangga2@mailinator.com" into Email field
 		And User input "Test1234" into Password field
 	  And User click on Masuk button
    
    @login3
 	   Scenario: User want to login without fill Email Field
-	   Given User in on SecondHand App
+	   Given User is on SecondHand App
 		 When User Click Masuk Button 
-		 Then User input "" into email filed
+		 Then User input "" into Email field
 	   And User input "Test1234" into Password field
 	   And User click on Masuk button
    
    @login4
 	  Scenario: User want to login without fill Password Field
-	  Given User in on SecondHand App
+	  Given User is on SecondHand App
 		When User Click Masuk Button 
-		Then User input "" into email filed
+		Then User input "" into Email field
 	 	And User input "" into Password field
 	  And User click on Masuk button
 	   
