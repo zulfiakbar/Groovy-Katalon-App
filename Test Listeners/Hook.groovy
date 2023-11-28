@@ -32,7 +32,7 @@ class Hook {
 	@BeforeTestCase
 	def beforeTestCase(TestCaseContext testCaseContext) {
 //		KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId())
-		this.launchApp()
+//		this.launchApp()
 	}
 
 	@AfterTestCase
