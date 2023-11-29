@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>errMsg_Password</name>
+   <name>errMsg_Invalid_Password</name>
    <tag></tag>
    <elementGuidId>ee3c6f99-6310-4b61-9331-6f2d2527e5cf</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
