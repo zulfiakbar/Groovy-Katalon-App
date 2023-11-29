@@ -68,9 +68,9 @@ class Login {
 	 
 	}
 	@And("User click on Masuk button")
-	def  UserclickonMasukbutton() {
+	def UserclickonMasukbutton() {
 	 Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
-	
+		
 	}
 	@Then("User want to login using unregistered email")
 	def Userwanttologinusingunregisteredemail () {
