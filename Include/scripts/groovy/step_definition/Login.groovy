@@ -45,6 +45,7 @@ import cucumber.api.java.en.When
 
 
 class Login {
+
 	@Given("User is on SecondHand App")
 	def UserisonSecondHandApp () {
 	 Mobile.startApplication('Apk/secondhand-24082023.apk', true)
@@ -103,5 +104,4 @@ class Login {
 	
 	}
 
-	
 }
