@@ -46,10 +46,14 @@ import cucumber.api.java.en.When
 
 class Edit_Product {
 
+	@And("User click on DAFTAR JUAL SAYA")
+	public void User_click_on_DAFTAR_JUAL_SAYA() {
+		Mobile.tap(findTestObject('Page_Akun/button_DaftarJualSaya'), 2)
+	}
 
-
-	@Then("User click product card that want to edit")
+	@And("User click product card that want to edit")
 	public void user_click_product_card_that_want_to_edit() {
+		Mobile.tap(findTestObject('Page_DaftarJualSaya/div_Product1'), 2)
 	}
 
 	@Then("User fill text field at {string}")

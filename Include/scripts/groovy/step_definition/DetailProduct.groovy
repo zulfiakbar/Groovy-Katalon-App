@@ -47,10 +47,7 @@ import cucumber.api.java.en.When
 
 
 class DetailProduct {
-	@Given("User is on SecondHand App")
-	public void user_is_on_SecondHand_App() {
-		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
-	}
+
 
 	@When("User click one of product card")
 	public void user_click_one_of_product_card() {
