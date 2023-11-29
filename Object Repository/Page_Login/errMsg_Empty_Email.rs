@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>errMsg_Email</name>
+   <name>errMsg_Empty_Email</name>
    <tag></tag>
    <elementGuidId>230842c4-5b17-40b7-b677-d5c8b87de418</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
