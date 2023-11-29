@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>tes mobile</name>
+   <name>Runner</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e9b57cdb-a5b4-45a6-8a87-f24b76c443a6</testCaseGuid>
+   <testCaseGuid>a1f156d8-d45e-4cb9-bf25-7e1afb296b33</testCaseGuid>
 </TestCaseEntity>

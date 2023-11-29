@@ -17,9 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Page_Home/div_Product1'), 2)
-
-Mobile.checkElement(findTestObject(null), 0)
-
-Mobile.sendKeys(findTestObject(null), '')
+CucumberKW.runWithCucumberRunner(Runner.class)
 
