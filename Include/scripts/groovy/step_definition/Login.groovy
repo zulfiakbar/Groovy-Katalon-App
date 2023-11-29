@@ -103,5 +103,4 @@ class Login {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	
 	}
-
 }
