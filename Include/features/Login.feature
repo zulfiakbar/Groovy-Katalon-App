@@ -9,7 +9,7 @@ Feature: Login
 	  And User input "erlangga421@mailinator.com" into EMAIL field
 	  And User input "Test1234" into PASSWORD field
 	  And User click on Masuk button
-#  Then User is on Akun saya page
+  #Then User is on Akun saya page
 
   @login2
   Scenario: User want to login using unregistered email
