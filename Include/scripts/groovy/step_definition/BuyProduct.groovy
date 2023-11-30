@@ -44,31 +44,37 @@ import cucumber.api.java.en.When
 
 
 
-class UpdateProfile {
-	
-	@And("User click on Edit button")
-	public void User_click_on_Edit_button() {
-		Mobile.tap(findTestObject('Page_Akun/button_EditProfile'), 2)
+class BuyProduct {
+	@Then("user click home page")
+	public void user_click_home_page() {
+		Mobile.tap(findTestObject('Page_Home/button_Beranda'), 3)
+	}
+
+	@Then("User click SAYA TERTARIK DAN INGIN NEGO button")
+	public void user_click_SAYA_TERTARIK_DAN_INGIN_NEGO_button() {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
+		Mobile.tap(findTestObject('Page_DetailProduct/button_TertarikdanNego'), 2)
+	}
+
+	@And("User fill {string} price field")
+	public void user_fill_field(String harga) {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/Popup_Tawar/txt_MasukkanHargaTawarmu'), 2)
+		Mobile.setText(findTestObject('Page_DetailProduct/Popup_Tawar/inputfield_HargaTawar'), harga, 3)
+	}
+
+	@Then("User click KIRIM button")
+	public void user_click_KIRIM_button() {
+		Mobile.tap(findTestObject('Page_DetailProduct/Popup_Tawar/button_Kirim'), 2)
+	}
+		
+	@Then("Message Harga tawarmu berhasil dikirim ke penjual will be shown")
+	public void message_Harga_tawarmu_berhasil_dikirim_ke_penjual_will_be_shown() {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/button_TertarikdanNego'), 2)
 	}
 	
-	@And("User click on Image field")
-	public void User_click_on_Image_field() {
-		Mobile.tap(findTestObject('Page_UpdateProfile/link_Foto'), 2)
+	@And("Message Silahkan login terlebih dahulu will be shown")
+	public void Message_Silahkan_login_terlebih_dahulu_will_be_shown() {
+		Mobile.verifyElementVisible(findTestObject('Page_Login/button_Login'), 2)
 	}
-	
-	@And("User click on Galeri button")
-	public void User_click_on_Galeri_button() {
-		Mobile.tap(findTestObject('Page_UpdateProfile/button_Galeri'), 2)
-	}
-	
-	@And("User input profile picture file")
-	public void User_input_profile_picture_file() {
-		Mobile.tap(findTestObject('Page_UpdateProfile/image_PictureFromGallery'), 2)
-		Mobile.delay(1)
-	}
-	
-	@Then("User verify profile updated")
-	def user_verify_profile_updated() {
-		Mobile.verifyElementVisible(findTestObject('Page_UpdateProfile/text_ProfilBerhasilDiperbarui'), 3)
-	}
+
 }

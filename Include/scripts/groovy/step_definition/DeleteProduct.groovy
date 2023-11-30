@@ -44,31 +44,20 @@ import cucumber.api.java.en.When
 
 
 
-class UpdateProfile {
-	
-	@And("User click on Edit button")
-	public void User_click_on_Edit_button() {
-		Mobile.tap(findTestObject('Page_Akun/button_EditProfile'), 2)
+class DeleteProduct {
+	@And("User click on trash button")
+	public void user_click_on_trash_button() {
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
 	}
 	
-	@And("User click on Image field")
-	public void User_click_on_Image_field() {
-		Mobile.tap(findTestObject('Page_UpdateProfile/link_Foto'), 2)
+	@And("App will show popup")
+	public void App_will_show_popup() {
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 2)
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 3)
 	}
-	
-	@And("User click on Galeri button")
-	public void User_click_on_Galeri_button() {
-		Mobile.tap(findTestObject('Page_UpdateProfile/button_Galeri'), 2)
-	}
-	
-	@And("User input profile picture file")
-	public void User_input_profile_picture_file() {
-		Mobile.tap(findTestObject('Page_UpdateProfile/image_PictureFromGallery'), 2)
-		Mobile.delay(1)
-	}
-	
-	@Then("User verify profile updated")
-	def user_verify_profile_updated() {
-		Mobile.verifyElementVisible(findTestObject('Page_UpdateProfile/text_ProfilBerhasilDiperbarui'), 3)
+
+	@Then("User successfully delete product")
+	public void user_successfully_delete_product() {
+		Mobile.verifyCheckpoint(findCheckpoint('Page_Akun/Page_DaftarJualSaya/button_Produk'), 3)
 	}
 }

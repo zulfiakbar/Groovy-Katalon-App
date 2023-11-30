@@ -51,7 +51,6 @@ class DetailProduct {
 
 	@When("User click one of product card")
 	public void user_click_one_of_product_card() {
-
 		Mobile.tap(findTestObject('Page_Home/div_Product1'), 3)
 	}
 
