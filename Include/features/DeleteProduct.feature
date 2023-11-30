@@ -1,7 +1,7 @@
 @Delete
 Feature: DeleteProduct
 
-  @tag1
+  @Delete1
   Scenario: User want to delete product
     Given User is on SecondHand App
     When User click AKUN icon
