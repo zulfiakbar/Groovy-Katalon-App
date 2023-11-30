@@ -51,10 +51,7 @@ class Login {
 		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
 		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3, FailureHandling.STOP_ON_FAILURE)
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 197c2d4543c92080cdfa24cd537c319970ee2416
 	@Then("User click Masuk Akun Button")
 	def UserclickMasukAkunButton() {
 		Mobile.tap(findTestObject('Page_Home/button_AkunMasuk'), 2)
@@ -72,11 +69,7 @@ class Login {
 		Mobile.setText(findTestObject('Page_Login/inputfield_password'), Password, 2)
 	}
 	@And("User click on Masuk button")
-<<<<<<< HEAD
 	def  UserclickonMasukbutton() {
-=======
-	def UserclickonMasukbutton() {
->>>>>>> 197c2d4543c92080cdfa24cd537c319970ee2416
 		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
 	}
 	@Then("User Failed to login using unregistered email")
@@ -127,4 +120,6 @@ class Login {
 		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
-}
+	
+	}
+
