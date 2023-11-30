@@ -73,28 +73,33 @@ class Login {
 	}
 	@Then("User Failed to login using unregistered email")
 	def UserFailedtologinusingunregisteredemail () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 	@Then("User failed to login without fill Email Field")
 	def UserfailedtologinwithoutfillEmailField () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
 	}
 	@Then("User failed to login without fill Password Field")
 	def UserfailedtologinwithoutfillPasswordField () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
 	}
 	@Then("User failed to login with invalid password")
 	def Userfailedtologinwithinvalidpassword () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
 	}
 	@Then("User failed to login with invalid email format1")
 	def ThenUserfailedtologinwithinvalidemailformat1 () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 
 	@Then("User failed to login with invalid email format2")
 	def Userfailedtologinwithinvalidemailformat2 () {
-
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 }
