@@ -17,10 +17,8 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.Keys as Keys
+
 import internal.GlobalVariable
-import io.appium.java_client.android.nativekey.AndroidKey
-import io.appium.java_client.android.nativekey.KeyEvent
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -46,28 +44,37 @@ import cucumber.api.java.en.When
 
 
 
-class DetailProduct {
-
-
-	@When("User click one of product card")
-	public void user_click_one_of_product_card() {
-		Mobile.tap(findTestObject('Page_Home/div_Product1'), 3)
+class BuyProduct {
+	@Then("user click home page")
+	public void user_click_home_page() {
+		Mobile.tap(findTestObject('Page_Home/button_Beranda'), 3)
 	}
 
-	@Then("User can see product detail")
-	public void user_can_see_product_detail() {
+	@Then("User click SAYA TERTARIK DAN INGIN NEGO button")
+	public void user_click_SAYA_TERTARIK_DAN_INGIN_NEGO_button() {
 		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
+		Mobile.tap(findTestObject('Page_DetailProduct/button_TertarikdanNego'), 2)
 	}
 
-	@When("User click one of product item from {string} result list")
-	public void user_click_one_of_product_item_from_result_list(String string) {
-		Mobile.tap(findTestObject('Page_Home/inputfield_search'), 2)
-		Mobile.setText(findTestObject('Page_Home/inputfield_search'), 'kucing', 1)
-		Mobile.sendKeys(findTestObject('Page_Home/inputfield_search'), Keys.chord(Keys.RETURN))
+	@And("User fill {string} price field")
+	public void user_fill_field(String harga) {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/Popup_Tawar/txt_MasukkanHargaTawarmu'), 2)
+		Mobile.setText(findTestObject('Page_DetailProduct/Popup_Tawar/inputfield_HargaTawar'), harga, 3)
 	}
 
-	@Then("User can see product detail from product list that appeared on search result")
-	public void user_can_see_product_detail_from_product_list_that_appeared_on_search_result() {
-		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/img_kucing'), 2)
+	@Then("User click KIRIM button")
+	public void user_click_KIRIM_button() {
+		Mobile.tap(findTestObject('Page_DetailProduct/Popup_Tawar/button_Kirim'), 2)
 	}
+		
+	@Then("Message Harga tawarmu berhasil dikirim ke penjual will be shown")
+	public void message_Harga_tawarmu_berhasil_dikirim_ke_penjual_will_be_shown() {
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/button_TertarikdanNego'), 2)
+	}
+	
+	@And("Message Silahkan login terlebih dahulu will be shown")
+	public void Message_Silahkan_login_terlebih_dahulu_will_be_shown() {
+		Mobile.verifyElementVisible(findTestObject('Page_Login/button_Login'), 2)
+	}
+
 }

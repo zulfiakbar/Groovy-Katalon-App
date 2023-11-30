@@ -17,10 +17,8 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.Keys as Keys
+
 import internal.GlobalVariable
-import io.appium.java_client.android.nativekey.AndroidKey
-import io.appium.java_client.android.nativekey.KeyEvent
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -46,28 +44,20 @@ import cucumber.api.java.en.When
 
 
 
-class DetailProduct {
-
-
-	@When("User click one of product card")
-	public void user_click_one_of_product_card() {
-		Mobile.tap(findTestObject('Page_Home/div_Product1'), 3)
+class DeleteProduct {
+	@And("User click on trash button")
+	public void user_click_on_trash_button() {
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
+	}
+	
+	@And("App will show popup")
+	public void App_will_show_popup() {
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 2)
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 3)
 	}
 
-	@Then("User can see product detail")
-	public void user_can_see_product_detail() {
-		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
-	}
-
-	@When("User click one of product item from {string} result list")
-	public void user_click_one_of_product_item_from_result_list(String string) {
-		Mobile.tap(findTestObject('Page_Home/inputfield_search'), 2)
-		Mobile.setText(findTestObject('Page_Home/inputfield_search'), 'kucing', 1)
-		Mobile.sendKeys(findTestObject('Page_Home/inputfield_search'), Keys.chord(Keys.RETURN))
-	}
-
-	@Then("User can see product detail from product list that appeared on search result")
-	public void user_can_see_product_detail_from_product_list_that_appeared_on_search_result() {
-		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/img_kucing'), 2)
+	@Then("User successfully delete product")
+	public void user_successfully_delete_product() {
+		Mobile.verifyCheckpoint(findCheckpoint('Page_Akun/Page_DaftarJualSaya/button_Produk'), 3)
 	}
 }
