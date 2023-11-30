@@ -6,7 +6,11 @@
    <UUID>21d49578-27f2-40e0-b16f-0b8ff1c5de93</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+<<<<<<< HEAD
    <projectFileLocation>D:\bootcamp\Challenge Platinum Fix\secondhand-app\secondhand-app.prj</projectFileLocation>
+=======
+   <projectFileLocation>E:\Study\Binar Quality Assurance\Challenge\Platinum\Katalon\App\secondhand-app\secondhand-app.prj</projectFileLocation>
+>>>>>>> 197c2d4543c92080cdfa24cd537c319970ee2416
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

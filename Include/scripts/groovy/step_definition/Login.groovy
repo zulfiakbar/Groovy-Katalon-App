@@ -51,10 +51,17 @@ class Login {
 		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
 		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3, FailureHandling.STOP_ON_FAILURE)
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 197c2d4543c92080cdfa24cd537c319970ee2416
 	@Then("User click Masuk Akun Button")
 	def UserclickMasukAkunButton() {
 		Mobile.tap(findTestObject('Page_Home/button_AkunMasuk'), 2)
+	}
+	@Then("User is on Akun saya page")
+	def UserisonAkunsayapage() {
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/txt_akun saya'), 3, FailureHandling.STOP_ON_FAILURE)
 	}
 	@And("User input {string} into Email field")
 	def UserinputEmailintoEmailfield(String email) {
@@ -65,41 +72,37 @@ class Login {
 		Mobile.setText(findTestObject('Page_Login/inputfield_password'), Password, 2)
 	}
 	@And("User click on Masuk button")
+<<<<<<< HEAD
 	def  UserclickonMasukbutton() {
+=======
+	def UserclickonMasukbutton() {
+>>>>>>> 197c2d4543c92080cdfa24cd537c319970ee2416
 		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
 	}
-	@Then("User is on Akun saya page")
-	def UserisonAkunsayapage () {
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Home/header_AkunSaya'), 3)
-	}
-	@Then("User want to login using unregistered email")
-	def Userwanttologinusingunregisteredemail () {
+	@Then("User Failed to login using unregistered email")
+	def UserFailedtologinusingunregisteredemail () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
-
-	@Then("User want to login without fill Email Field")
-	def UserwanttologinwithoutfillEmailField () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Email'), 'text', 0)
+	@Then("User failed to login without fill Email Field")
+	def UserfailedtologinwithoutfillEmailField () {
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
 	}
-
-	@Then("User want to login without fill Password Field")
-	def UserwanttologinwithoutfillPasswordField () {
+	@Then("User failed to login without fill Password Field")
+	def UserfailedtologinwithoutfillPasswordField () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
 	}
-
-	@Then("User want to login with invalid password")
-	def Userwanttologinwithinvalidpassword () {
-		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Password'), 'text', 0)
+	@Then("User failed to login with invalid password")
+	def Userfailedtologinwithinvalidpassword () {
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
 	}
-
-	@Then("User want to login with invalid email format without domain extension")
-	def Userwanttologinwithinvalidemailformatwithoutdomainextension () {
+	@Then("User failed to login with invalid email format1")
+	def ThenUserfailedtologinwithinvalidemailformat1 () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 
+	@Then("User failed to login with invalid email format2")
+	def Userfailedtologinwithinvalidemailformat2 () {
 
-	@Then("User want to login with invalid email format without character")
-	def Userwanttologinwithinvalidemailformatwithoutcharacter () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 }
