@@ -57,7 +57,7 @@ class Login {
 	}
 	@Then("User is on Akun saya page")
 	def UserisonAkunsayapage() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/txt_akun saya'), 3, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/txt_akunsaya'), 3, FailureHandling.STOP_ON_FAILURE)
 	}
 	@And("User input {string} into Email field")
 	def UserinputEmailintoEmailfield(String email) {
@@ -73,33 +73,50 @@ class Login {
 	}
 	@Then("User Failed to login using unregistered email")
 	def UserFailedtologinusingunregisteredemail () {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		Mobile.verifyElementPresent(findTestObject('Object Repository/Mobile/Page_Login/errMsg_Invalid_Email'), 10)
+		String errorMessage = Mobile.getText(findTestObject('Object Repository/Mobile/Page_Login/errMsg_Invalid_Email'))
+		println("Error Message: " + errorMessage)
+
 	}
 	@Then("User failed to login without fill Email Field")
 	def UserfailedtologinwithoutfillEmailField () {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		def device_Height = Mobile.getDeviceHeight()
+		int startY = device_Height * 0.30
+		int endY = device_Height * 0.70
+		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
 	}
 	@Then("User failed to login without fill Password Field")
 	def UserfailedtologinwithoutfillPasswordField () {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		def device_Height = Mobile.getDeviceHeight()
+		int startY = device_Height * 0.30
+		int endY = device_Height * 0.70
+		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
 	}
 	@Then("User failed to login with invalid password")
 	def Userfailedtologinwithinvalidpassword () {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		def device_Height = Mobile.getDeviceHeight()
+		int startY = device_Height * 0.30
+		int endY = device_Height * 0.70
+		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
 	}
 	@Then("User failed to login with invalid email format1")
 	def ThenUserfailedtologinwithinvalidemailformat1 () {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		def device_Height = Mobile.getDeviceHeight()
+		int startY = device_Height * 0.30
+		int endY = device_Height * 0.70
+		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 
 	@Then("User failed to login with invalid email format2")
 	def Userfailedtologinwithinvalidemailformat2 () {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		def device_Height = Mobile.getDeviceHeight()
+		int startY = device_Height * 0.30
+		int endY = device_Height * 0.70
+		Mobile.swipe(0, startY, 0, endY)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 }
