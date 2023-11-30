@@ -75,6 +75,10 @@ class SellProduct {
 	
 	@And("User input {string} on Deskripsi field")
 	def User_input_DeskripsiProduk_on_DeskripsiProduk_field(String DeskripsiProduk) {
+		def device_Height = Mobile.getDeviceHeight()
+		int startY = device_Height * 0.30
+		int endY = device_Height * 0.70
+		Mobile.swipe(0, endY, 0, startY)
 		Mobile.setText(findTestObject('Page_SellProduct/inputfield_DeskripsiProduk'), DeskripsiProduk, 2)
 	}
 	
