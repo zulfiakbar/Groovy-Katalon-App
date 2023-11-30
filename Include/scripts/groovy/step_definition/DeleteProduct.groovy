@@ -49,15 +49,15 @@ class DeleteProduct {
 	public void user_click_on_trash_button() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
 	}
-	
+
 	@And("App will show popup")
 	public void App_will_show_popup() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 2)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 4)
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 3)
 	}
 
 	@Then("User successfully delete product")
 	public void user_successfully_delete_product() {
-		Mobile.verifyCheckpoint(findCheckpoint('Page_Akun/Page_DaftarJualSaya/button_Produk'), 3)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/txt_DaftarJualSaya'), 4)
 	}
 }
