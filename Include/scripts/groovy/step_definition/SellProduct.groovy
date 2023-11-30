@@ -46,4 +46,56 @@ import cucumber.api.java.en.When
 
 class SellProduct {
 	
+	@And("User click on Tambah button")
+	public void User_click_on_tambah_button() {
+		Mobile.tap(findTestObject('Page_home/button_tambah'), 2)
+	}
+	
+	@And("User input {string} on Nama Produk field")
+	def User_input_NamaProduk_on_NamaProduk_field(String NamaProduk) {
+		Mobile.setText(findTestObject('Page_SellProduct/inputfield_NamaProduk'), NamaProduk, 2)
+	}
+	
+	@And("User input {string} on Harga Produk field")
+	def User_input_HargaProduk_on_HargaProduk_field(String HargaProduk) {
+		Mobile.setText(findTestObject('Page_SellProduct/inputfield_HargaProduk'), HargaProduk, 2)
+	}
+	
+	@And("User select {string} on Kategori dropdown field")
+	def User_select_Kategori_on_Kategori_dropdown_field(String KategoriProduk) {
+		Mobile.tap(findTestObject('Page_SellProduct/dropdown_Kategori'), 0)
+		Mobile.sendKeys(findTestObject('Page_SellProduct/dropdown_Kategori'), KategoriProduk)
+		Mobile.tap(findTestObject('Page_SellProduct/link_PilihKategoriPertama'), 0)
+	}
+	
+	@And("User input {string} on Lokasi field")
+	def User_input_LokasiProduk_on_LokasiProduk_field(String LokasiProduk) {
+		Mobile.setText(findTestObject('Page_SellProduct/inputfield_LokasiProduk'), LokasiProduk, 2)
+	}
+	
+	@And("User input {string} on Deskripsi field")
+	def User_input_DeskripsiProduk_on_DeskripsiProduk_field(String DeskripsiProduk) {
+		Mobile.setText(findTestObject('Page_SellProduct/inputfield_DeskripsiProduk'), DeskripsiProduk, 2)
+	}
+	
+	@And("User click on Foto Produk field")
+	public void User_click_on_FotoProduk_field() {
+		Mobile.tap(findTestObject('Page_SellProduct/inputfield_FotoProduk'), 2)
+	}
+	
+	@And("User input product image file")
+	public void User_input_productImage_file() {
+		Mobile.tap(findTestObject('Page_SellProduct/image_ProductFromGallery'), 2)
+		Mobile.delay(3)
+	}
+	
+	@And("User click on Terbitkan button")
+	public void User_click_on_Terbitkan_button() {
+		Mobile.tap(findTestObject('Page_SellProduct/button_Terbitkan'), 2)
+	}
+	
+	@Then("User verify product added")
+	def user_verify_product_added() {
+		Mobile.verifyElementVisible(findTestObject('Page_SellProduct/text_ProdukBerhasilDiterbitkan'), 3)
+	}
 }
