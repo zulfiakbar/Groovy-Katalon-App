@@ -51,10 +51,6 @@ class Login {
 		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
 		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3, FailureHandling.STOP_ON_FAILURE)
 	}
-	//	@When("User click AKUN icon")
-	//	def UserclickAKUNicon () {
-	//		Mobile.tap(findTestObject('Object Repository/Page_Home/button-akun'), 0)
-	//	}
 
 	@Then("User click Masuk Akun Button")
 	def UserclickMasukAkunButton() {
@@ -70,7 +66,7 @@ class Login {
 	}
 	@And("User click on Masuk button")
 	def  UserclickonMasukbutton() {
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 0)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
 	}
 	@Then("User is on Akun saya page")
 	def UserisonAkunsayapage () {

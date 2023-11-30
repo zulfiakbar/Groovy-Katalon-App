@@ -4,7 +4,6 @@ Feature: EditProduct
   @Edit1
   Scenario: User want to edit product detail
     Given User is on SecondHand App
-   Given User is on SecondHand App
     When User click AKUN icon
     Then User click Masuk Akun Button
     And User input "erlangga421@mailinator.com" into Email field
