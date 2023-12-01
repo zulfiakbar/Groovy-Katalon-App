@@ -74,17 +74,19 @@ class Login {
 	}
 	@Then("User Failed to login using unregistered email")
 	def UserFailedtologinusingunregisteredemail () {
-		Mobile.verifyElementPresent(findTestObject('Object Repository/Mobile/Page_Login/errMsg_Invalid_Email'), 10)
-		String errorMessage = Mobile.getText(findTestObject('Object Repository/Mobile/Page_Login/errMsg_Invalid_Email'))
-		println("Error Message: " + errorMessage)
-
-	}
-	@Then("User failed to login without fill Email Field")
-	def UserfailedtologinwithoutfillEmailField () {
 		def device_Height = Mobile.getDeviceHeight()
 		int startY = device_Height * 0.30
 		int endY = device_Height * 0.70
 		Mobile.swipe(0, startY, 0, endY)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Mobile/Page_Login/errMsg_Invalid_Email'), 10)
+	}
+	@Then("User failed to login without fill Email Field")
+	def UserfailedtologinwithoutfillEmailField () {
+//		def device_Height = Mobile.getDeviceHeight()
+//		int startY = device_Height * 0.30
+//		int endY = device_Height * 0.70
+//		Mobile.swipe(0, startY, 0, endY)
+		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
 	}
 	@Then("User failed to login without fill Password Field")
