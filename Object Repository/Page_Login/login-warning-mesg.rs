@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>errMsg_Login</name>
+   <name>login-warning-mesg</name>
    <tag></tag>
-   <elementGuidId>7a40d9be-869c-4544-b83d-21b9008d1113</elementGuidId>
+   <elementGuidId>2f7efec1-46ae-473a-b48c-de6b3488f619</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.Toast</value>
-      <webElementGuid>d03e796d-6383-4c16-b50b-594d9cea040c</webElementGuid>
+      <webElementGuid>89247e0f-9f0a-46da-a7ab-0833377ceb69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>389b1d93-941e-4d76-8719-316a664d688d</webElementGuid>
+      <webElementGuid>28e577b2-f178-4fa7-895a-aea9bdf00e14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,7 +28,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Email atau kata sandi salah</value>
-      <webElementGuid>126a737a-b60f-4dfb-b9ae-4bac64343b4e</webElementGuid>
+      <webElementGuid>6fbc1c6d-4541-49ca-b8fd-093557f37526</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,7 +36,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.android.settings</value>
-      <webElementGuid>2ab13463-bf75-4dbd-9c3e-016826aa0c39</webElementGuid>
+      <webElementGuid>468d644a-19dd-4fdf-8123-b13be5f436d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>ba640580-9251-4f48-84a9-1a9014fe2bc8</webElementGuid>
+      <webElementGuid>2f76b7c5-5786-4753-960f-fe2ba0bc0439</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.Toast[1]</value>
-      <webElementGuid>7eba35f7-db84-4ae0-850b-458ff3b7183f</webElementGuid>
+      <webElementGuid>51922597-36aa-40e3-84ac-ada795933bbf</webElementGuid>
    </webElementProperties>
    <locator>//hierarchy/android.widget.Toast[1]</locator>
    <locatorStrategy>XPATH</locatorStrategy>

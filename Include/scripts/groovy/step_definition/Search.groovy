@@ -45,20 +45,19 @@ import cucumber.api.java.en.When
 
 
 class Search {
-	
+
 	@And("User input {string} into Search field")
 	def user_input_namaproduk_into_search_field(String namaproduk) {
 		Mobile.setText(findTestObject('Page_Home/inputfield_search'), namaproduk, 2)
 	}
-	
+
 	@And("User click the first search card")
 	def user_click_the_first_search_card() {
 		Mobile.tap(findTestObject('Page_Search/card_Search01'), 3)
 	}
-	
+
 	@And("User click BACK button in search")
 	def user_click_back_button_in_search() {
 		Mobile.tap(findTestObject('Page_Search/button_BackSearch'), 3)
 	}
-	
 }
