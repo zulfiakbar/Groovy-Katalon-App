@@ -93,6 +93,14 @@ class SellProduct {
 		Mobile.delay(3)
 	}
 	
+	@And("User input product image file from vivo")
+	public void User_input_productImage_file_from_vivo() {
+		Mobile.delay(5)
+		Mobile.verifyElementVisible(findTestObject('Page_SellProduct/card_Foto01Vivo'), 5)
+		Mobile.tap(findTestObject('Page_SellProduct/card_Foto01Vivo'), 2)
+		
+	}
+	
 	@And("User click on Terbitkan button")
 	public void User_click_on_Terbitkan_button() {
 		Mobile.tap(findTestObject('Page_SellProduct/button_Terbitkan'), 2)

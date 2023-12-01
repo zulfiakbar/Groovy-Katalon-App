@@ -69,7 +69,7 @@ class BuyProduct {
 
 	@Then("Message Harga tawarmu berhasil dikirim ke penjual will be shown")
 	public void message_Harga_tawarmu_berhasil_dikirim_ke_penjual_will_be_shown() {
-		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/button_TertarikdanNego'), 2)
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
 	}
 
 	@And("Message Silahkan login terlebih dahulu will be shown")
