@@ -51,53 +51,63 @@ class Login {
 	def UserisonSecondHandApp () {
 		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
 		Mobile.verifyElementVisible(findTestObject('Page_Home/button_beranda'), 3, FailureHandling.STOP_ON_FAILURE)
+		
 	}
-
 	@Then("User click Masuk Akun Button")
 	def UserclickMasukAkunButton() {
 		Mobile.tap(findTestObject('Page_Home/button_AkunMasuk'), 2)
+		
 	}
 	@Then("User is on Akun saya page")
 	def UserisonAkunsayapage() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/txt_akunsaya'), 3, FailureHandling.STOP_ON_FAILURE)
+		
 	}
 	@And("User input {string} into Email field")
 	def UserinputEmailintoEmailfield(String email) {
 		Mobile.setText(findTestObject('Page_Login/inputfield_email'), email, 2)
+		
 	}
 	@And("User input {string} into Password field")
 	def UserinputPasswordintoPasswordfield(String Password) {
 		Mobile.setText(findTestObject('Page_Login/inputfield_password'), Password, 2)
+		
 	}
 	@And("User click on Masuk button")
 	def  UserclickonMasukbutton() {
 		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		
 	}
 	@Then("User Failed to login using unregistered email")
 	def UserFailedtologinusingunregisteredemail () {
 		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 		driver.findElementByXPath("//android.widget.Toast[@text='Email atau kata sandi salah']")
+		
 	}
 	@Then("User failed to login without fill Email Field")
 	def UserfailedtologinwithoutfillEmailField () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
+		
 	}
 	@Then("User failed to login without fill Password Field")
 	def UserfailedtologinwithoutfillPasswordField () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
+		
 	}
 	@Then("User failed to login with invalid password")
 	def Userfailedtologinwithinvalidpassword () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
+		
 	}
 	@Then("User failed to login with invalid email format1")
 	def ThenUserfailedtologinwithinvalidemailformat1 () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		
 	}
-
 	@Then("User failed to login with invalid email format2")
 	def Userfailedtologinwithinvalidemailformat2 () {
 		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		
 	}
 	@Then("User failed to login with invalid email and invalid password")
 	def Userfailedtologinwithinvalidemailandinvalidpassword () {
