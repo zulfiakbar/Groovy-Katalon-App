@@ -42,11 +42,14 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
+import java.util.Random
 
 
 class Register {
 
 
+	Random rand = new Random();
+	
 	@Given("User is on the SecondHand App")
 	def user_is_on_the_secondhand_app() {
 		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
@@ -79,7 +82,11 @@ class Register {
 	}
 
 	@And("User input {string} into EMAIL field")
-	def user_input_email_into_email_field(String email) {
+	def user_input_email_into_email_field(String email1) {
+		int rand_int = rand.nextInt(9999)
+		String nama = "erlangga"
+		String domain = "@mailinator.com"
+		String email = nama + rand_int + domain
 		Mobile.setText(findTestObject('Page_Register/inputfield_Email'), email, 2)
 	}
 

@@ -49,10 +49,16 @@ class DeleteProduct {
 	public void user_click_on_trash_button() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
 	}
+	
+	@And("User click on trash button xpath")
+	public void user_click_on_trash_button_xpath() {
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Deletexpath'), 3)
+	}
 
 	@And("App will show popup")
 	public void App_will_show_popup() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 4)
+		Mobile.delay(5)
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 3)
 	}
 
