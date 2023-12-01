@@ -66,15 +66,14 @@ class BuyProduct {
 	public void user_click_KIRIM_button() {
 		Mobile.tap(findTestObject('Page_DetailProduct/Popup_Tawar/button_Kirim'), 2)
 	}
-		
+
 	@Then("Message Harga tawarmu berhasil dikirim ke penjual will be shown")
 	public void message_Harga_tawarmu_berhasil_dikirim_ke_penjual_will_be_shown() {
 		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/button_TertarikdanNego'), 2)
 	}
-	
+
 	@And("Message Silahkan login terlebih dahulu will be shown")
 	public void Message_Silahkan_login_terlebih_dahulu_will_be_shown() {
 		Mobile.verifyElementVisible(findTestObject('Page_Login/button_Login'), 2)
 	}
-
 }

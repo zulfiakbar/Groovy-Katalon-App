@@ -41,6 +41,7 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import io.appium.java_client.AppiumDriver
 
 
 
@@ -74,54 +75,33 @@ class Login {
 	}
 	@Then("User Failed to login using unregistered email")
 	def UserFailedtologinusingunregisteredemail () {
-		def device_Height = Mobile.getDeviceHeight()
-		int startY = device_Height * 0.30
-		int endY = device_Height * 0.70
-		Mobile.swipe(0, startY, 0, endY)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Mobile/Page_Login/errMsg_Invalid_Email'), 10)
+		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+		driver.findElementByXPath("//android.widget.Toast[@text='Email atau kata sandi salah']")
 	}
 	@Then("User failed to login without fill Email Field")
 	def UserfailedtologinwithoutfillEmailField () {
-//		def device_Height = Mobile.getDeviceHeight()
-//		int startY = device_Height * 0.30
-//		int endY = device_Height * 0.70
-//		Mobile.swipe(0, startY, 0, endY)
-		Mobile.tap(findTestObject('Object Repository/Page_Login/button_Login'), 2)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Email'), 'text', 0)
 	}
 	@Then("User failed to login without fill Password Field")
 	def UserfailedtologinwithoutfillPasswordField () {
-		def device_Height = Mobile.getDeviceHeight()
-		int startY = device_Height * 0.30
-		int endY = device_Height * 0.70
-		Mobile.swipe(0, startY, 0, endY)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Empty_Password'), 'text', 0)
 	}
 	@Then("User failed to login with invalid password")
 	def Userfailedtologinwithinvalidpassword () {
-		def device_Height = Mobile.getDeviceHeight()
-		int startY = device_Height * 0.30
-		int endY = device_Height * 0.70
-		Mobile.swipe(0, startY, 0, endY)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Password'), 'text', 0)
 	}
 	@Then("User failed to login with invalid email format1")
 	def ThenUserfailedtologinwithinvalidemailformat1 () {
-		def device_Height = Mobile.getDeviceHeight()
-		int startY = device_Height * 0.30
-		int endY = device_Height * 0.70
-		Mobile.swipe(0, startY, 0, endY)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
 
 	@Then("User failed to login with invalid email format2")
 	def Userfailedtologinwithinvalidemailformat2 () {
-		def device_Height = Mobile.getDeviceHeight()
-		int startY = device_Height * 0.30
-		int endY = device_Height * 0.70
-		Mobile.swipe(0, startY, 0, endY)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
+		Mobile.getAttribute(findTestObject('Object Repository/Page_Login/errMsg_Invalid_Email'), 'text', 0)
 	}
-	
+	@Then("User failed to login with invalid email and invalid password")
+	def Userfailedtologinwithinvalidemailandinvalidpassword () {
+		AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+		driver.findElementByXPath("//android.widget.Toast[@text='Email atau kata sandi salah']")
 	}
-
+}
