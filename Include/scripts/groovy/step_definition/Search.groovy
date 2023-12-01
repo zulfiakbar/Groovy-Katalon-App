@@ -44,20 +44,21 @@ import cucumber.api.java.en.When
 
 
 
-class DeleteProduct {
-	@And("User click on trash button")
-	public void user_click_on_trash_button() {
-		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
+class Search {
+	
+	@And("User input {string} into Search field")
+	def user_input_namaproduk_into_search_field(String namaproduk) {
+		Mobile.setText(findTestObject('Page_Home/inputfield_search'), namaproduk, 2)
 	}
-
-	@And("App will show popup")
-	public void App_will_show_popup() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 4)
-		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 3)
+	
+	@And("User click the first search card")
+	def user_click_the_first_search_card() {
+		Mobile.tap(findTestObject('Page_Search/card_Search01'), 3)
 	}
-
-	@Then("User successfully delete product")
-	public void user_successfully_delete_product() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/txt_DaftarJualSaya'), 4)
+	
+	@And("User click BACK button in search")
+	def user_click_back_button_in_search() {
+		Mobile.tap(findTestObject('Page_Search/button_BackSearch'), 3)
 	}
+	
 }

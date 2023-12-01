@@ -44,20 +44,11 @@ import cucumber.api.java.en.When
 
 
 
-class DeleteProduct {
-	@And("User click on trash button")
-	public void user_click_on_trash_button() {
-		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
+class Logout {
+	
+	@And("User click KELUAR button")
+	def user_click_keluar_button() {
+		Mobile.tap(findTestObject('Page_Home/button_Keluar'), 3)
 	}
-
-	@And("App will show popup")
-	public void App_will_show_popup() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 4)
-		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_Hapus'), 3)
-	}
-
-	@Then("User successfully delete product")
-	public void user_successfully_delete_product() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/txt_DaftarJualSaya'), 4)
-	}
+	
 }
