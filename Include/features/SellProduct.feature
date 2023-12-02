@@ -1,7 +1,7 @@
 @SellProduct
 Feature: Sell Product
 
-  @UserWantToAddNewProductToSellWithFillAllFieldWithValidData
+  @AddNewProductWithValidInput
   Scenario: User want to add new product to sell with fill all field with valid data
     Given User is on SecondHand App
     When User click AKUN icon
@@ -11,7 +11,7 @@ Feature: Sell Product
     And User click on Masuk button
     Then User is on Akun saya page
     And User click on Tambah button
-    And User input "Whey Protein" on Nama Produk field
+    And User input "Produk Group 1" on Nama Produk field
     And User input "100000" on Harga Produk field
     And User select "Kesehatan" on Kategori dropdown field
     And User input "Jogja" on Lokasi field

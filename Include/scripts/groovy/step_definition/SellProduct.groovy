@@ -52,29 +52,29 @@ class SellProduct {
 	}
 	
 	@And("User input {string} on Nama Produk field")
-	def User_input_NamaProduk_on_NamaProduk_field(String NamaProduk) {
+	public void User_input_NamaProduk_on_NamaProduk_field(String NamaProduk) {
 		Mobile.setText(findTestObject('Page_SellProduct/inputfield_NamaProduk'), NamaProduk, 2)
 	}
 	
 	@And("User input {string} on Harga Produk field")
-	def User_input_HargaProduk_on_HargaProduk_field(String HargaProduk) {
+	public void User_input_HargaProduk_on_HargaProduk_field(String HargaProduk) {
 		Mobile.setText(findTestObject('Page_SellProduct/inputfield_HargaProduk'), HargaProduk, 2)
 	}
 	
 	@And("User select {string} on Kategori dropdown field")
-	def User_select_Kategori_on_Kategori_dropdown_field(String KategoriProduk) {
+	public void User_select_Kategori_on_Kategori_dropdown_field(String KategoriProduk) {
 		Mobile.tap(findTestObject('Page_SellProduct/dropdown_Kategori'), 0)
 		Mobile.sendKeys(findTestObject('Page_SellProduct/dropdown_Kategori'), KategoriProduk)
 		Mobile.tap(findTestObject('Page_SellProduct/link_PilihKategoriPertama'), 0)
 	}
 	
 	@And("User input {string} on Lokasi field")
-	def User_input_LokasiProduk_on_LokasiProduk_field(String LokasiProduk) {
+	public void User_input_LokasiProduk_on_LokasiProduk_field(String LokasiProduk) {
 		Mobile.setText(findTestObject('Page_SellProduct/inputfield_LokasiProduk'), LokasiProduk, 2)
 	}
 	
 	@And("User input {string} on Deskripsi field")
-	def User_input_DeskripsiProduk_on_DeskripsiProduk_field(String DeskripsiProduk) {
+	public void User_input_DeskripsiProduk_on_DeskripsiProduk_field(String DeskripsiProduk) {
 		def device_Height = Mobile.getDeviceHeight()
 		int startY = device_Height * 0.30
 		int endY = device_Height * 0.70
@@ -93,13 +93,21 @@ class SellProduct {
 		Mobile.delay(3)
 	}
 	
+	@And("User input product image file from vivo")
+	public void User_input_productImage_file_from_vivo() {
+		Mobile.delay(5)
+		Mobile.verifyElementVisible(findTestObject('Page_SellProduct/card_Foto01Vivo'), 5)
+		Mobile.tap(findTestObject('Page_SellProduct/card_Foto01Vivo'), 2)
+		
+	}
+	
 	@And("User click on Terbitkan button")
 	public void User_click_on_Terbitkan_button() {
 		Mobile.tap(findTestObject('Page_SellProduct/button_Terbitkan'), 2)
 	}
 	
 	@Then("User verify product added")
-	def user_verify_product_added() {
+	public void user_verify_product_added() {
 		Mobile.verifyElementVisible(findTestObject('Page_SellProduct/text_ProdukBerhasilDiterbitkan'), 3)
 	}
 }

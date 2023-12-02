@@ -60,7 +60,7 @@ class Login {
 	}
 	@Then("User is on Akun saya page")
 	def UserisonAkunsayapage() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/txt_akunsaya'), 3, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/txt_akunsaya'), 5, FailureHandling.STOP_ON_FAILURE)
 		
 	}
 	@And("User input {string} into Email field")

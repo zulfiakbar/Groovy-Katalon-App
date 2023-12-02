@@ -16,7 +16,7 @@ Feature: Buy Product
     And User click SAYA TERTARIK DAN INGIN NEGO button
     And User fill "1700" price field
     And User click KIRIM button
-    Then Message Harga tawarmu berhasil dikirim ke penjual will be shown
+    Then User succesfully sent tawar harga
 
   @BuyProduct2
   Scenario: Guest user want to negotiate and buy product

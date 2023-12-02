@@ -9,7 +9,7 @@ Feature: Register
     Then User click DAFTAR link
     And User is on register page
     Then User input "Erlangga" into NAMA field
-    And User input "erlangga421@mailinator.com" into EMAIL field
+    And User input "randomemail" into EMAIL field
     And User input "Test1234" into PASSWORD field
     And User input "08123456789" into NOMOR HP field
     And User input "Jogja" into KOTA field
@@ -25,7 +25,7 @@ Feature: Register
     Then User click DAFTAR link
     And User is on register page
     Then User input "" into NAMA field
-    And User input "erlangga972@mailinator.com" into EMAIL field
+    And User input "erlanggaabc123@mailinator.com" into EMAIL field
     And User input "Test1234" into PASSWORD field
     And User input "08123456789" into NOMOR HP field
     And User input "Jogja" into KOTA field

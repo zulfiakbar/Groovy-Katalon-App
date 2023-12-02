@@ -56,7 +56,7 @@ class DetailProduct {
 
 	@Then("User can see product detail")
 	public void user_can_see_product_detail() {
-		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_NamaProduk'), 2)
+		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_HargaProduk'), 2)
 	}
 
 	@When("User click one of product item from {string} result list")
