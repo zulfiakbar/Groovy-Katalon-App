@@ -29,7 +29,7 @@ Feature: Update Profile
     And User click on Image field
     And User click on Galeri button
     And User input big size image profile picture file
-    Then User verify alert Request Entity Too Large show up
+    Then User verify profile alert Request Entity Too Large show up
 
   @UpdateProfilePictureFromCamera
   Scenario: User want to update profile picture from camera
