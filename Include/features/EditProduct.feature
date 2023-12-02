@@ -12,10 +12,11 @@ Feature: EditProduct
     Then User is on Akun saya page
     And User click on DAFTAR JUAL SAYA
     And User click product card that want to edit
-    And User fill text field at "Nama Produk"
-    And User fill text field at "Harga Produk"
-    And User fill text field at "Lokasi"
-    And User fill text field at "Deskripsi"
+    And User fill text field "sepatu" at NAMA PRODUK
+    And User fill text field "17000" at HARGA PRODUK  
+    And User select category "Elektronik"
+    And User fill text field "malang" at LOKASI PRODUK 
+    And User fill text field "Mainnya Hebat" at DESKRIPSI 
     And upload photos at FOTO PRODUK
     And User click PERBARUI PRODUK button
     Then User successfully edit product detail

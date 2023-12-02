@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>txt_HargaProduk</name>
+   <name>txt_NamaProduk</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -12,7 +12,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.TextView</value>
-      <webElementGuid>7a53ae89-b60c-4c2b-aa49-850c60a45afc</webElementGuid>
+      <webElementGuid>8fe2c7a6-80cb-42ea-9c5a-b2851627677e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,23 +20,23 @@
       <name>index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>95107a59-b967-4df0-a924-eb351d0e1cb4</webElementGuid>
+      <webElementGuid>b8b755dd-92c2-4fda-bdd7-c13d506a2eeb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Rp100</value>
-      <webElementGuid>23580005-38a5-4120-83ed-f6636c277b4b</webElementGuid>
+      <value>kel 1 abchvg</value>
+      <webElementGuid>3e6c6319-84ce-400b-be8f-b37cc420e312</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>id.binar.fp.secondhand:id/tv_product_price</value>
-      <webElementGuid>cdf879c0-d11e-45cf-84c3-c11f9a1346e6</webElementGuid>
+      <value>id.binar.fp.secondhand:id/tv_product_name</value>
+      <webElementGuid>f24c164b-6d9a-4cc4-ba90-dea8478c7a15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>package</name>
       <type>Main</type>
       <value>id.binar.fp.secondhand</value>
-      <webElementGuid>8c45990d-a5c3-49fe-97dd-fbb631ada454</webElementGuid>
+      <webElementGuid>62c8c30a-07f9-47d4-9654-0ddd25c0029c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>219d3534-1265-4ede-ba23-0e6d81f80c02</webElementGuid>
+      <webElementGuid>14e4822b-7733-4422-9a97-0eaf8b644fd3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>86f38756-ce75-4f77-b092-9928a9e1edbc</webElementGuid>
+      <webElementGuid>b1571c5e-e403-408c-a1f7-cd14af7787de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -68,7 +68,7 @@
       <name>clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>3d20589f-df2b-4cf0-8053-ba3a7eafd0fa</webElementGuid>
+      <webElementGuid>372b99d9-ae59-4a64-992e-cc69dc87a090</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -76,7 +76,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>8a86c400-98ef-41d9-a2c6-47bbd1d376fe</webElementGuid>
+      <webElementGuid>61425de8-91fc-4b81-b5cd-3839cc576bab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -84,7 +84,7 @@
       <name>focusable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>32b84dd2-a1b2-4642-8122-847a2613e7c6</webElementGuid>
+      <webElementGuid>9275e0df-2591-43cf-9977-8241c5265ece</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -92,7 +92,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>584566d3-1714-48f3-81b7-2aba585764df</webElementGuid>
+      <webElementGuid>d848585e-9b1f-450f-a3be-3dc2adac3e59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -100,7 +100,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>e07f547b-3fc3-4997-88a5-eceb2fa506fe</webElementGuid>
+      <webElementGuid>e2cafcf6-1ded-4687-ba92-4a0a11530faf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -108,7 +108,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6990a593-e70b-479b-8b4f-55ab362def39</webElementGuid>
+      <webElementGuid>036c1b6a-d5e3-422b-9324-2a6def42b83f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -116,7 +116,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>51b794bf-f1d8-4271-8d77-099a20de74d7</webElementGuid>
+      <webElementGuid>5d3909a0-dcc6-4864-9a1b-cfd1c4602854</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -124,47 +124,47 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4406aaa8-f1bf-484c-9573-8cf0dda81397</webElementGuid>
+      <webElementGuid>53b2e2ce-5258-4a1d-b84d-f58f69df7917</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>32</value>
-      <webElementGuid>44fa4ca4-0506-4d14-b1c1-88146894427a</webElementGuid>
+      <value>40</value>
+      <webElementGuid>8784f3c3-5208-4b89-9fb2-ef0292b6dbfc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>1064</value>
-      <webElementGuid>96bea19d-64f3-4971-8504-13f97ea29b6a</webElementGuid>
+      <value>706</value>
+      <webElementGuid>1cff8ff1-ad64-43a8-9895-64f8f8415f87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>656</value>
-      <webElementGuid>76f90ca0-46b2-4787-b049-5d9faf0e29b4</webElementGuid>
+      <value>232</value>
+      <webElementGuid>7edb006b-0751-4e4d-9f94-58d4d74f9a3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>45</value>
-      <webElementGuid>502a542e-65c5-4bfb-af04-584b2be3bc44</webElementGuid>
+      <value>38</value>
+      <webElementGuid>d240da7e-4d03-4cba-b7b7-0d7ed06f8845</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[32,1064][688,1109]</value>
-      <webElementGuid>c1b54417-6d2d-406d-b910-dabd6be2f376</webElementGuid>
+      <value>[40,706][272,744]</value>
+      <webElementGuid>166031e3-81ba-44f5-9381-3b9f75516535</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -172,16 +172,16 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>d9459976-b0c6-4e86-af63-11da7d502c9a</webElementGuid>
+      <webElementGuid>95f69ecb-81e7-450f-9942-115a7f41da2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[2]</value>
-      <webElementGuid>64ccb460-cce4-46cc-be46-5a2db8b515ae</webElementGuid>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/androidx.viewpager.widget.ViewPager[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/androidx.recyclerview.widget.RecyclerView[1]/androidx.cardview.widget.CardView[1]/android.view.ViewGroup[1]/android.widget.TextView[1]</value>
+      <webElementGuid>ae5ffeb0-1ca6-4e6a-a4a0-40289c3067fe</webElementGuid>
    </webElementProperties>
-   <locator>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[2]</locator>
+   <locator>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/androidx.viewpager.widget.ViewPager[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/androidx.recyclerview.widget.RecyclerView[1]/androidx.cardview.widget.CardView[1]/android.view.ViewGroup[1]/android.widget.TextView[1]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
