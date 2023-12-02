@@ -3,24 +3,24 @@
    <description></description>
    <name>errMsg_KategoriKosong</name>
    <tag></tag>
-   <elementGuidId>d5075513-3477-41d7-8d3a-c939871b696b</elementGuidId>
+   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>android.widget.Toast</value>
-      <webElementGuid>5fc931c0-0a6b-495c-b792-f9eb874961a5</webElementGuid>
+      <webElementGuid>6f0d98f3-416f-45f4-ab82-ddbbd1316453</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>3b56db47-4f40-44e1-a91a-dfafff6cab43</webElementGuid>
+      <webElementGuid>c091490f-0890-48aa-ab29-f9d7907e18fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,15 +28,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Pilih minimal 1 kategori</value>
-      <webElementGuid>5191bdb0-2cd3-4bbb-b970-35a3e6c640d5</webElementGuid>
+      <webElementGuid>1d505e80-7d30-431d-8a64-41c54aa199a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
       <value>com.android.settings</value>
-      <webElementGuid>53e54d29-d328-4680-becf-6ffe798ede18</webElementGuid>
+      <webElementGuid>a47e6f70-4019-44d2-84d3-26fee762e18f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>d27f8659-4390-44eb-bdbd-e27008b5846e</webElementGuid>
+      <webElementGuid>7d33847d-e2e4-4713-9aa1-491fbdc8e284</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,8 +52,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.Toast[1]</value>
-      <webElementGuid>78b16ddc-8d66-4bc4-b8bb-7b7b3e14213b</webElementGuid>
+      <webElementGuid>b67925a7-9a48-4bfa-b78a-1094ca487bc7</webElementGuid>
    </webElementProperties>
-   <locator>//hierarchy/android.widget.Toast[1][count(. | //*[(@text = 'Pilih minimal 1 kategori' or . = 'Pilih minimal 1 kategori') and @displayed = 'true']) = count(//*[(@text = 'Pilih minimal 1 kategori' or . = 'Pilih minimal 1 kategori') and @displayed = 'true'])]</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locator>//hierarchy/android.widget.Toast[1]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
