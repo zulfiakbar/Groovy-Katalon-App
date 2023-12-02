@@ -49,7 +49,7 @@ class DeleteProduct {
 	public void user_click_on_trash_button() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Deletexpath'), 3)
 	}
-	
+
 	@And("User click on trash button xpath")
 	public void user_click_on_trash_button_xpath() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Deletexpath'), 3)

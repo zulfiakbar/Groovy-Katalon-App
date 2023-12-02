@@ -45,10 +45,9 @@ import cucumber.api.java.en.When
 
 
 class Logout {
-	
+
 	@And("User click KELUAR button")
 	def user_click_keluar_button() {
 		Mobile.tap(findTestObject('Page_Home/button_Keluar'), 3)
 	}
-	
 }

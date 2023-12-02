@@ -45,12 +45,12 @@ import cucumber.api.java.en.When
 
 
 class Notification {
-	
+
 	@And("User click NOTIFICATION icon")
 	def user_click_notification_icon() {
 		Mobile.tap(findTestObject('Page_Home/button_Notifikasi'), 3)
 	}
-	
+
 	@And("User refresh the page")
 	def user_refresh_the_page() {
 		def device_Height = Mobile.getDeviceHeight()
@@ -58,23 +58,23 @@ class Notification {
 		int endY = device_Height * 0.70
 		Mobile.swipe(0, startY, 0, endY)
 	}
-	
+
 	@And("User click the first notification")
 	def user_click_the_first_notification() {
 		Mobile.tap(findTestObject('Page_Notification/card_Notifikasi01'), 3)
 		Mobile.delay(3)
 	}
-	
+
 	@And("User click BERANDA icon")
 	def user_click_beranda_icon() {
 		Mobile.tap(findTestObject('Page_Home/button_Beranda'), 3)
 	}
-	
+
 	@And("User click BACK button in product detail")
 	def user_click_back_button_in_product_detail() {
 		Mobile.tap(findTestObject('Page_DetailProduct/button_back'), 3)
 	}
-	
+
 	@And("User click BACK button in DAFTAR JUAL SAYA")
 	def user_click_back_button_in_datar_jual_saya() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Back'), 3)

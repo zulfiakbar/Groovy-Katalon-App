@@ -50,7 +50,6 @@ class Search {
 	def user_input_namaproduk_into_search_field(String namaproduk) {
 		Mobile.tap(findTestObject('Page_Home/inputfield_search'), 3)
 		Mobile.setText(findTestObject('Page_Search/inputfield_CariAfterTap'), namaproduk, 2)
-		
 	}
 
 	@And("User click the first search card")
