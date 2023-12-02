@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>inputfield_Kota</name>
+   <name>button_CameraShutters</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -11,40 +11,40 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>android.widget.EditText</value>
-      <webElementGuid>b3682308-761b-42be-8861-24e431b3367a</webElementGuid>
+      <value>android.widget.ImageView</value>
+      <webElementGuid>57d840ee-a354-4869-b19f-5ba7d76e5093</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>99b44c55-5d59-4fb7-92dd-57f003e119a9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Jogja</value>
-      <webElementGuid>d09c0eaf-43bf-4447-ad4c-ffff7fa9b0e6</webElementGuid>
+      <value>1</value>
+      <webElementGuid>ad0e072f-f77f-4cd4-a362-159740c283e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>id.binar.fp.secondhand:id/edit_text</value>
-      <webElementGuid>4246ffb8-a7e2-4767-bcd1-7cd2bcde4019</webElementGuid>
+      <value>com.oppo.camera:id/shutter_button</value>
+      <webElementGuid>94a420fb-6406-4071-a7f9-b624ba591b1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
-      <value>id.binar.fp.secondhand</value>
-      <webElementGuid>900b4f3a-cf33-4f92-87e9-2c3b575a47f7</webElementGuid>
+      <value>com.oppo.camera</value>
+      <webElementGuid>643f0666-3a18-46d3-ba20-f5a7c56aecb3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>content-desc</name>
+      <type>Main</type>
+      <value>&quot;Shutter&quot; button</value>
+      <webElementGuid>629fd1c5-67ee-452f-8503-cd6bfd67bce9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>03faf855-024e-40f8-9f90-54baff575b65</webElementGuid>
+      <webElementGuid>31eb9fc8-61c4-4dd6-bbc3-92d382d2eb1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>c5d8e7f4-4788-4741-ad09-1dc22ddab659</webElementGuid>
+      <webElementGuid>8f46aeec-40e1-4773-af5a-7c05081975ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -68,7 +68,7 @@
       <name>clickable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>857b90ac-28a8-4b09-9306-9bef51688723</webElementGuid>
+      <webElementGuid>d8e20f26-3a9c-4f0e-8bc4-bc85c9b8d4e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -76,7 +76,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>78050b11-b17b-4bc9-ac54-e75d87528891</webElementGuid>
+      <webElementGuid>6b321679-1c7f-4f98-89bf-cb800c1af687</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -84,7 +84,7 @@
       <name>focusable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>851b69ef-f319-4a04-aee5-58cfa0a70359</webElementGuid>
+      <webElementGuid>8f45797a-1e8a-447e-9062-8a0caaaf0644</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -92,7 +92,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2604edb6-9c7a-4ea7-ada9-376c3bfc7459</webElementGuid>
+      <webElementGuid>e2e2f551-becd-42b3-8745-de9f52a09dab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -100,15 +100,15 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>087ae13e-38ba-45a7-873a-20058bce00ad</webElementGuid>
+      <webElementGuid>97038e43-57e9-4e75-be7e-b1c63416f338</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>long-clickable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>9cdfcee1-33dd-4c91-bc11-595a2e684ec4</webElementGuid>
+      <value>false</value>
+      <webElementGuid>d0c7c9e8-7a85-4229-b990-0c499cb41a7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -116,7 +116,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b50e681b-cd39-4b6c-a22e-f71e0c407804</webElementGuid>
+      <webElementGuid>81a6fa40-e2bf-47e2-8864-88ff4ddbf5a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -124,47 +124,47 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4c4db3ea-b95c-487b-b83a-857eeef6a387</webElementGuid>
+      <webElementGuid>22f2bb33-62dc-47ba-9f8c-0fc80c11d597</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>72</value>
-      <webElementGuid>d982548b-8a9e-4215-9b09-ee1c90ef8437</webElementGuid>
+      <value>423</value>
+      <webElementGuid>93944dc2-6d47-4c53-b00c-6e64ada0f63d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>1706</value>
-      <webElementGuid>de63a166-dcce-4f34-a0e9-790151326ed2</webElementGuid>
+      <value>1902</value>
+      <webElementGuid>d3e9aab8-1257-4d3b-935e-74cd87ca4fb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>936</value>
-      <webElementGuid>226f0097-136b-4d0c-a007-10c4c8a9e4ac</webElementGuid>
+      <value>234</value>
+      <webElementGuid>2424ecf9-39c1-4b53-8917-f37ac2a3bd59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>155</value>
-      <webElementGuid>4eb4bc6d-8ec3-4a52-b0e8-fde9c1dd67c8</webElementGuid>
+      <value>230</value>
+      <webElementGuid>4bc3fd13-cfcd-4674-ab38-2a8d8e8dd27e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[72,1706][1008,1861]</value>
-      <webElementGuid>e06bd213-02b5-44c7-9494-456118634740</webElementGuid>
+      <value>[423,1902][657,2132]</value>
+      <webElementGuid>3e020ef2-8839-4ff7-b665-a756420baf7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -172,16 +172,24 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>298392a1-bc55-4774-8356-c2a55edb98b7</webElementGuid>
+      <webElementGuid>3c08646c-de56-4151-96bd-c6aae8a4f2a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value></value>
+      <webElementGuid>41010767-8387-465f-9cd3-0e0a71ef4965</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]</value>
-      <webElementGuid>6f3979f3-0988-4552-81b4-3e91b8318d6f</webElementGuid>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.ImageView[2]</value>
+      <webElementGuid>62963446-460f-4769-a88e-3d0913fa17e6</webElementGuid>
    </webElementProperties>
-   <locator>id.binar.fp.secondhand:id/edit_text</locator>
+   <locator>com.oppo.camera:id/shutter_button</locator>
    <locatorStrategy>ID</locatorStrategy>
 </MobileElementEntity>

@@ -49,7 +49,7 @@ class Register {
 
 
 	Random rand = new Random();
-	
+
 	@Given("User is on the SecondHand App")
 	def user_is_on_the_secondhand_app() {
 		Mobile.startApplication('Apk/secondhand-24082023.apk', true)
