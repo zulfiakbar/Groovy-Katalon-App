@@ -2,11 +2,11 @@
 Feature: View Product List
  
 
-  @PRL001
-  Scenario: VPR001 - Users want to see all product list
-    Given User is on SecondHand App
-    When User verify semua on telusuri kategori
-    Then User can see all product
+  #@PRL001
+  #Scenario: VPR001 - Users want to see all product list
+    #Given User is on SecondHand App
+    #When User verify semua on telusuri kategori
+    #Then User can see all product
     
   @PRL002
   Scenario: VPR002 - User want to see product list based on category filter

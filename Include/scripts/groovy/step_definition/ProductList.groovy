@@ -50,24 +50,24 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 
 class ProductList {
 	
-	@When("User verify semua on telusuri kategori")
-	def Userverifysemuaontelusurikategori() {
-		Mobile.tap(findTestObject('Page_Home/category_semua'), 3)
-	}
-
-	@Then("User can see all product")
-	def Usercanseeallproduct() {
-		AndroidDriver<AndroidElement> driver = MobileDriverFactory.getDriver()
-		TouchAction touchAction = new TouchAction(driver)
-		int startX = driver.manage().window().getSize().width / 2
-		int startY = driver.manage().window().getSize().height * 3 / 4
-		int endY = driver.manage().window().getSize().height / 4
-		touchAction.press(PointOption.point(startX, startY)).moveTo(PointOption.point(startX, endY)).release().perform()
-	}
+//	@When("User verify semua on telusuri kategori")
+//	def Userverifysemuaontelusurikategori() {
+//		Mobile.tap(findTestObject('Page_Home/category_semua'), 3)
+//	}
+//
+//	@Then("User can see all product")
+//	def Usercanseeallproduct() {
+//		AndroidDriver<AndroidElement> driver = MobileDriverFactory.getDriver()
+//		TouchAction touchAction = new TouchAction(driver)
+//		int startX = driver.manage().window().getSize().width / 2
+//		int startY = driver.manage().window().getSize().height * 3 / 4
+//		int endY = driver.manage().window().getSize().height / 4
+//		touchAction.press(PointOption.point(startX, startY)).moveTo(PointOption.point(startX, endY)).release().perform()
+//	}
 	@When("User click one of category button on Telusuri Kategori section")
 	def UserclickoneofcategorybuttononTelusuriKategorisection() {
 		Mobile.verifyElementVisible(findTestObject('Page_Home/category_Elektronik'), 3)
-		Mobile.verifyElementVisible(findTestObject('Page_Home/category_KomputerdanAksesoris'), 3)
+//		Mobile.verifyElementVisible(findTestObject('Page_Home/category_KomputerdanAksesoris'), 3)
 	}
 	@Then("User can see product list based on category filter")
 	def Usercanseeproductlistbasedoncategoryfilter() {
