@@ -3,7 +3,7 @@
    <description></description>
    <name>text_AlertPilihMinimal1Kategori</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>7294f91f-166f-45bb-bf16-0367f696165b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.Toast</value>
-      <webElementGuid>0466c85c-75d0-473a-ace0-8fb642db6c1e</webElementGuid>
+      <webElementGuid>6636b47c-ab9f-4637-9157-99de581840df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>ca026fda-3f38-4d2a-99a7-f343955fef4e</webElementGuid>
+      <webElementGuid>f0ed583e-e5bb-49a6-b8a1-0fd0d1f35e53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,7 +28,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Pilih minimal 1 kategori</value>
-      <webElementGuid>6b2df2c5-f425-4848-ae7c-c4cff79a5b0c</webElementGuid>
+      <webElementGuid>e0b498c3-cb4b-41bf-b4d1-47742599d766</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,7 +36,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.android.settings</value>
-      <webElementGuid>c837eb07-6d8f-4ba7-8516-2d02a2f77073</webElementGuid>
+      <webElementGuid>34853784-689a-4716-876c-a04616e6c8d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>5b1445ca-d4c6-4325-a4e9-d87a385a4548</webElementGuid>
+      <webElementGuid>ea53475e-562e-4378-91f5-5ba9bcde5c3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,8 +52,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.Toast[1]</value>
-      <webElementGuid>1082683f-fb7e-492c-b2d3-ef597d51ad50</webElementGuid>
+      <webElementGuid>16e1057e-a9bb-401a-b243-e88409fc6bf0</webElementGuid>
    </webElementProperties>
-   <locator>//hierarchy/android.widget.Toast[1]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>//hierarchy/android.widget.Toast[1][count(. | //*[@class = 'android.widget.Toast' and @index = '1' and (@text = 'Pilih minimal 1 kategori' or . = 'Pilih minimal 1 kategori') and @package = 'com.android.settings' and @displayed = 'true']) = count(//*[@class = 'android.widget.Toast' and @index = '1' and (@text = 'Pilih minimal 1 kategori' or . = 'Pilih minimal 1 kategori') and @package = 'com.android.settings' and @displayed = 'true'])]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>
