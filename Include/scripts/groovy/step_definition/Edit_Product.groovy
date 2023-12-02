@@ -53,19 +53,46 @@ class Edit_Product {
 
 	@And("User click product card that want to edit")
 	public void user_click_product_card_that_want_to_edit() {
-		Mobile.tap(findTestObject('Page_DaftarJualSaya/div_Product1'), 2)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/txt_NamaProduk'), 2)
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/txt_NamaProduk'), 0)
 	}
 
-	@Then("User fill text field at {string}")
-	public void user_fill_text_field_at(String string) {
+	@And("User fill text field {string} at NAMA PRODUK")
+	public void user_fill_text_field_at_NAMA_PRODUK(String NamaProduk) {
+		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_NamaProduk'), NamaProduk, 2)
+	}
+	
+	@And("User fill text field {string} at HARGA PRODUK")
+	public void user_fill_text_field_at_HARGA_PRODUK(String Harga) {
+		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Harga'), Harga, 2)
+	}
+	
+	@And("User fill text field {string} at LOKASI PRODUK")
+	public void user_fill_text_field_at_LOKASI_PRODUK(String Lokasi) {
+		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Lokasi'), Lokasi, 2)
+	}
+	
+	@Then("User fill text field {string} at DESKRIPSI")
+	public void user_fill_text_field_at_DESKRIPSI(String Deskripsi) {
+		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_NamaProduk'), Deskripsi, 2)
 	}
 
-	@Then("User choose category at KATEGORI")
-	public void user_choose_category_at_KATEGORI() {
+	@Then("User select category {string}")
+	public void user_select_category(String EditKategori) {
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/dropdown_EditKategori'), 0)
+		Mobile.sendKeys(findTestObject('Page_SellProduct/dropdown_Kategori'), EditKategori)
+		Mobile.tap(findTestObject('Page_SellProduct/link_PilihKategoriPertama'), 0)
 	}
+
 
 	@Then("upload photos at FOTO PRODUK")
 	public void upload_photos_at_FOTO_PRODUK() {
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_FotoProduk'), 0)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/txt_PilihGambar'), 2)
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/button_Galeri'), 0)
+		Mobile.delay(4)
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/img_FotoEdit'), 0)
+		
 	}
 
 	@Then("User click PERBARUI PRODUK button")
