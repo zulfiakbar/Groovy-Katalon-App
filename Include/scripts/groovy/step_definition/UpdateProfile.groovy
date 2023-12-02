@@ -78,8 +78,8 @@ class UpdateProfile {
 		Mobile.delay(1)
 	}
 	
-	@Then("User verify alert Request Entity Too Large show up")
-	public void user_verify_alert_requestEntityTooLarge_showUp() {
+	@Then("User verify profile alert Request Entity Too Large show up")
+	public void user_verify_profile_alert_requestEntityTooLarge_showUp() {
 		Mobile.verifyElementVisible(findTestObject('Page_UpdateProfile/text_AlertRequestEntityTooLarge'), 3)
 	}
 	

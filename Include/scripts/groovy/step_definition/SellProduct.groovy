@@ -89,7 +89,7 @@ class SellProduct {
 	
 	@And("User input product image file")
 	public void User_input_productImage_file() {
-		Mobile.tap(findTestObject('Page_SellProduct/image_ProductFromGallery'), 2)
+		Mobile.tap(findTestObject('Object Repository/Page_SellProduct/image_ProductFromGallery'), 2)
 		Mobile.delay(3)
 	}
 	
@@ -98,7 +98,6 @@ class SellProduct {
 		Mobile.delay(5)
 		Mobile.verifyElementVisible(findTestObject('Page_SellProduct/card_Foto01Vivo'), 5)
 		Mobile.tap(findTestObject('Page_SellProduct/card_Foto01Vivo'), 2)
-		
 	}
 	
 	@And("User click on Terbitkan button")
@@ -109,5 +108,46 @@ class SellProduct {
 	@Then("User verify product added")
 	public void user_verify_product_added() {
 		Mobile.verifyElementVisible(findTestObject('Page_SellProduct/text_ProdukBerhasilDiterbitkan'), 3)
+	}
+	
+	@Then("User verify alert name cant be blank show up")
+	public void user_verify_name_cant_be_blank() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertNamaProdukTidakBolehKosong'), 3)
+	}
+	
+	@Then("User verify alert price cant be blank show up")
+	public void user_verify_price_cant_be_blank() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertHargaTidakBolehKosong'), 3)
+	}
+	
+	@Then("User verify alert category cant be blank show up")
+	public void user_verify_category_cant_be_blank() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertPilihMinimal1Kategori'), 3)
+	}
+	
+	@Then("User verify alert location cant be blank show up")
+	public void user_verify_location_cant_be_blank() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertLokasiTidakBolehKosong'), 3)
+	}
+	
+	@Then("User verify alert description cant be blank show up")
+	public void user_verify_description_cant_be_blank() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertDeskripsiProdukTidakBolehKosong'), 3)
+	}
+	
+	@Then("User verify alert photo cant be blank show up")
+	public void user_verify_photo_cant_be_blank() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertSilahkanMasukkanFotoProdukTerlebihDahulu'), 3)
+	}
+	
+	@And("User input big size product image file")
+	public void User_input_big_size_product_image_file() {
+		Mobile.tap(findTestObject('Object Repository/Page_SellProduct/image_BigSizeImage'), 2)
+		Mobile.delay(1)
+	}
+	
+	@Then("User verify product alert Request Entity Too Large show up")
+	public void user_verify_product_alert_requestEntityTooLarge_showUp() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_SellProduct/text_AlertRequestEntityTooLarge'), 3)
 	}
 }
