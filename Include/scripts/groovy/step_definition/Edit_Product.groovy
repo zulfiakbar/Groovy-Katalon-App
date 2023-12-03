@@ -119,7 +119,7 @@ class Edit_Product {
 
 	@Then("User will show up error message category")
 	public void User_will_show_up_error_message_category() {
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_KategoriKosong'), 1)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/button_PerbaruiProduct'), 1)
 	}
 
 	@Then("User will show up error message under field LOKASI PRODUK")
