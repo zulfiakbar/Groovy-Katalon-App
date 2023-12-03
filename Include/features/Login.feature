@@ -79,4 +79,4 @@ Feature: Login
     And User input "erlanggamailinator000.com" into Email field
     And User input "Test123456" into Password field
     And User click on Masuk button
-     Then User failed to login with invalid email and invalid password       
+     Then User failed to login with invalid email and invalid password
