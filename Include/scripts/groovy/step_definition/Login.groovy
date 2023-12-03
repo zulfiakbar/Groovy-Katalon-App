@@ -86,7 +86,7 @@ class Login {
 		int startY = device_Height * 0.30
 		int endY = device_Height * 0.70
 		Mobile.swipe(0, startY, 0, endY)
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Page_Login/button_Login'), 2)
+		Mobile.verifyElementVisible(findTestObject(Object Repository/Page_Login/button_Login'), 2)
 	}
 	@Then("User failed to login without fill Password Field")
 	def UserfailedtologinwithoutfillPasswordField () {
