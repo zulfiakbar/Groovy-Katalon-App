@@ -51,6 +51,20 @@ Feature: EditProduct
     And User click PERBARUI PRODUK button
     Then User will show up error message under field HARGA PRODUK
 
+  @Edit4
+  Scenario: User want to edit product detail without fill category
+    Given User is on SecondHand App
+    When User click AKUN icon
+    Then User click Masuk Akun Button
+    And User input "erlangga421@mailinator.com" into Email field
+    And User input "Test1234" into Password field
+    And User click on Masuk button
+    Then User is on Akun saya page
+    And User click on DAFTAR JUAL SAYA
+    And User click product card that want to edit
+    And User will show up error message category
+    And User click PERBARUI PRODUK button
+    Then User will show up error message under field HARGA PRODUK
 
   @Edit5
   Scenario: User want to edit product detail without fill LOKASI PRODUK
