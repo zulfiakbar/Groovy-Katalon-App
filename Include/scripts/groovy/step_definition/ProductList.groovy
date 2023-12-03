@@ -78,4 +78,3 @@ class ProductList {
 			Mobile.swipe(startX, startY, endX, endY)
 	}
 }
-	
