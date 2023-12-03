@@ -61,17 +61,17 @@ class Edit_Product {
 	public void user_fill_text_field_at_NAMA_PRODUK(String NamaProduk) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_NamaProduk'), NamaProduk, 2)
 	}
-	
+
 	@And("User fill text field {string} at HARGA PRODUK")
 	public void user_fill_text_field_at_HARGA_PRODUK(String Harga) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Harga'), Harga, 2)
 	}
-	
+
 	@And("User fill text field {string} at LOKASI PRODUK")
 	public void user_fill_text_field_at_LOKASI_PRODUK(String Lokasi) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Lokasi'), Lokasi, 2)
 	}
-	
+
 	@Then("User fill text field {string} at DESKRIPSI")
 	public void user_fill_text_field_at_DESKRIPSI(String Deskripsi) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Deskripsi'), Deskripsi, 2)
@@ -95,41 +95,39 @@ class Edit_Product {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/button_Galeri'), 0)
 		Mobile.delay(4)
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/img_FotoEdit'), 0)
-		
 	}
 
 	@And("User click PERBARUI PRODUK button")
 	public void user_click_PERBARUI_PRODUK_button() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/button_PerbaruiProduct'), 2)
-		
 	}
 
 	@Then("User successfully edit product detail")
 	public void user_successfully_edit_product_detail() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/popup_updatesucces'), 2)
 	}
-	
+
 	@Then("User will show up error message under field NAMA PRODUK")
 	public void User_will_show_up_error_message_under_field_NAMA_PRODUK() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_NamaKosong'), 2)
 	}
-	
+
 	@Then("User will show up error message under field HARGA PRODUK")
 	public void User_will_show_up_error_message_under_field_HARGA_PRODUK() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_HargaKosong'), 2)
 	}
-	
+
 	@Then("User will show up error message category")
 	public void User_will_show_up_error_message_category() {
 		Mobile.delay(2)
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_KategoriKosong'), 1)
 	}
-	
+
 	@Then("User will show up error message under field LOKASI PRODUK")
 	public void User_will_show_up_error_message_under_field_LOKASI_PRODUK() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_LokasiKosong'), 2)
 	}
-	
+
 	@Then("User will show up error message under field DESKRIPSI")
 	public void User_will_show_up_error_message_under_field_DESKRIPSI() {
 		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_DeskripsiKosong'), 2)
