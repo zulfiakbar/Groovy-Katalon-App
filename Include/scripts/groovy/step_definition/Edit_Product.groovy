@@ -61,17 +61,17 @@ class Edit_Product {
 	public void user_fill_text_field_at_NAMA_PRODUK(String NamaProduk) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_NamaProduk'), NamaProduk, 2)
 	}
-	
+
 	@And("User fill text field {string} at HARGA PRODUK")
 	public void user_fill_text_field_at_HARGA_PRODUK(String Harga) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Harga'), Harga, 2)
 	}
-	
+
 	@And("User fill text field {string} at LOKASI PRODUK")
 	public void user_fill_text_field_at_LOKASI_PRODUK(String Lokasi) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Lokasi'), Lokasi, 2)
 	}
-	
+
 	@Then("User fill text field {string} at DESKRIPSI")
 	public void user_fill_text_field_at_DESKRIPSI(String Deskripsi) {
 		Mobile.setText(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/inputfield_Deskripsi'), Deskripsi, 2)
@@ -95,7 +95,6 @@ class Edit_Product {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/button_Galeri'), 0)
 		Mobile.delay(4)
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/Popup_UbahGambar/img_FotoEdit'), 0)
-		
 	}
 
 	@And("User click PERBARUI PRODUK button")

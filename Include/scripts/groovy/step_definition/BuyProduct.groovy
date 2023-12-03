@@ -71,11 +71,9 @@ class BuyProduct {
 	public void user_succesfully_sent_tawar_harga() {
 		Mobile.verifyElementVisible(findTestObject('Page_DetailProduct/txt_HargaProdukafterTawar'), 2)
 	}
-	
+
 	@And("Message Silahkan login terlebih dahulu will be shown")
 	public void Message_Silahkan_login_terlebih_dahulu_will_be_shown() {
 		Mobile.verifyElementVisible(findTestObject('Page_Login/button_Login'), 2)
 	}
-	
-	
 }
