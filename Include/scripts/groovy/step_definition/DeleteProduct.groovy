@@ -47,7 +47,7 @@ import cucumber.api.java.en.When
 class DeleteProduct {
 	@And("User click on trash button")
 	public void user_click_on_trash_button() {
-		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Delete'), 3)
+		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/button_Deletexpath'), 3)
 	}
 
 	@And("User click on trash button xpath")

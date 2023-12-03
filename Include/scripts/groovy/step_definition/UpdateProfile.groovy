@@ -77,9 +77,15 @@ class UpdateProfile {
 		Mobile.tap(findTestObject('Page_UpdateProfile/image_BigSizeFromGallery'), 2)
 		Mobile.delay(1)
 	}
+<<<<<<< HEAD
 
 	@Then("User verify alert Request Entity Too Large show up")
 	public void user_verify_alert_requestEntityTooLarge_showUp() {
+=======
+	
+	@Then("User verify profile alert Request Entity Too Large show up")
+	public void user_verify_profile_alert_requestEntityTooLarge_showUp() {
+>>>>>>> 20af322907bd12eb056c38cf04318698fbafd7ed
 		Mobile.verifyElementVisible(findTestObject('Page_UpdateProfile/text_AlertRequestEntityTooLarge'), 3)
 	}
 
