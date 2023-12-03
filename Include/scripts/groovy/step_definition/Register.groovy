@@ -82,7 +82,12 @@ class Register {
 	}
 
 	@And("User input {string} into EMAIL field")
-	def user_input_email_into_email_field(String email1) {
+	def user_input_email_into_email_field(String email) {
+		Mobile.setText(findTestObject('Page_Register/inputfield_Email'), email, 2)
+	}
+	
+	@And("User input random email into EMAIL field")
+	def user_input_random_email_into_email_field() {
 		int rand_int = rand.nextInt(9999)
 		String nama = "erlangga"
 		String domain = "@mailinator.com"
@@ -90,6 +95,11 @@ class Register {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Email'), email, 2)
 	}
 
+	@And("User input nothing into EMAIL field")
+	def user_input_nothing_into_email_field() {
+		Mobile.delay(2)
+	}
+	
 	@And("User input {string} into PASSWORD field")
 	def user_input_password_into_password_field(String password) {
 		Mobile.setText(findTestObject('Page_Register/inputfield_Password'), password, 2)
