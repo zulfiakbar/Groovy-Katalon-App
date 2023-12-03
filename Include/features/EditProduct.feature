@@ -62,10 +62,10 @@ Feature: EditProduct
     Then User is on Akun saya page
     And User click on DAFTAR JUAL SAYA
     And User click product card that want to edit
-    And User will show up error message category
+    And User removed category
     And User click PERBARUI PRODUK button
-    Then User will show up error message under field HARGA PRODUK
-
+    Then User will show up error message category
+    
   @Edit5
   Scenario: User want to edit product detail without fill LOKASI PRODUK
     Given User is on SecondHand App

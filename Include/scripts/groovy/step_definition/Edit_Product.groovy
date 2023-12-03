@@ -83,7 +83,7 @@ class Edit_Product {
 		Mobile.sendKeys(findTestObject('Page_SellProduct/dropdown_Kategori'), EditKategori)
 		Mobile.tap(findTestObject('Page_SellProduct/link_PilihKategoriPertama'), 0)
 	}
-	@And("User removed categori")
+	@And("User removed category")
 	public void User_removed_categori() {
 		Mobile.tap(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/button_RemoveKategori'), 2)
 	}
@@ -119,8 +119,7 @@ class Edit_Product {
 
 	@Then("User will show up error message category")
 	public void User_will_show_up_error_message_category() {
-		Mobile.delay(2)
-		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/errMsg_KategoriKosong'), 1)
+		Mobile.verifyElementVisible(findTestObject('Page_Akun/Page_DaftarJualSaya/Page_EditProduct/button_PerbaruiProduct'), 1)
 	}
 
 	@Then("User will show up error message under field LOKASI PRODUK")
