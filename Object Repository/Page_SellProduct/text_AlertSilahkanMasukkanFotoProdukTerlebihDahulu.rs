@@ -3,7 +3,7 @@
    <description></description>
    <name>text_AlertSilahkanMasukkanFotoProdukTerlebihDahulu</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>129234c7-e912-4ebc-9f37-6d4e31c82e27</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.Toast</value>
-      <webElementGuid>93000469-0456-46b7-9552-1abb92df3afa</webElementGuid>
+      <webElementGuid>c7b616bb-b0a8-4109-896c-ca68db4b790d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>d668676e-1385-452b-a247-e242ae18f369</webElementGuid>
+      <webElementGuid>31473e1f-9357-42f7-8fc8-199718ab2ec2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,7 +28,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Silahkan masukkan foto produk terlebih dahulu.</value>
-      <webElementGuid>b4ed906d-35a7-49c4-9003-0699ffd9af0f</webElementGuid>
+      <webElementGuid>be6872aa-76d0-43fc-9f08-b520f36b7a54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,7 +36,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.android.settings</value>
-      <webElementGuid>93441510-541a-4652-aded-5275ca895b33</webElementGuid>
+      <webElementGuid>6ffcf938-a03d-4d05-bd53-c984238afe9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>4d573276-2530-43cf-8fb2-485366237608</webElementGuid>
+      <webElementGuid>2f77b655-ed6a-4531-9647-fed7718bc9ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,8 +52,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.Toast[1]</value>
-      <webElementGuid>6f567f24-bcc4-4ae5-ac1c-e3f2f9974b16</webElementGuid>
+      <webElementGuid>9aa89914-1d5b-4784-900b-9776a5cf4baf</webElementGuid>
    </webElementProperties>
-   <locator>//hierarchy/android.widget.Toast[1]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>//hierarchy/android.widget.Toast[1][count(. | //*[@class = 'android.widget.Toast' and @index = '1' and (@text = 'Silahkan masukkan foto produk terlebih dahulu.' or . = 'Silahkan masukkan foto produk terlebih dahulu.') and @package = 'com.android.settings' and @displayed = 'true']) = count(//*[@class = 'android.widget.Toast' and @index = '1' and (@text = 'Silahkan masukkan foto produk terlebih dahulu.' or . = 'Silahkan masukkan foto produk terlebih dahulu.') and @package = 'com.android.settings' and @displayed = 'true'])]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>
